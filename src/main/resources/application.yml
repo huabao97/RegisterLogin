@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /ems
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource  #数据源类型
+    driver-class-name: com.mysql.cj.jdbc.Driver   #加载驱动
+    url: jdbc:mysql://127.0.0.1:3306/db?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+
+
+# mybatis配置
+mybatis:
+  type-aliases-package: com.example.project1.pojo # 别名目录
